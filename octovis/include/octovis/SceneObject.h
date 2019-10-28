@@ -31,6 +31,8 @@
   #include <QtCore/qt_windows.h>
 #endif
 
+#include <QGLWidget>
+
 #if defined(Q_WS_MAC) || defined(Q_OS_MAC)
   #include <OpenGL/glu.h>
 #else
