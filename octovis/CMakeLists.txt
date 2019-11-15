@@ -1,6 +1,14 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 PROJECT( octovis )
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+option(OCTOVIS_QT5 "Link Octovis against Qt5?" ON)
+if(OCTOVIS_QT5)
+	# Compiling against QT5 requires C++11.
+	set(CMAKE_CXX_STANDARD 11)
+endif(OCTOVIS_QT5)
+
 include(CTest)
 
 # # version (e.g. for packaging)

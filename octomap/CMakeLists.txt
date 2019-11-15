@@ -1,6 +1,8 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 PROJECT( octomap )
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 include(CTest)
 
 # version (e.g. for packaging)
